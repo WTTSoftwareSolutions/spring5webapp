@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * Created by jt on 5/18/17.
+ * Created by wtt on 5/13/20.
  */
 @Controller
 public class BookController {
@@ -22,6 +22,6 @@ public class BookController {
 
         model.addAttribute("books", bookRepository.findAll());
 
-        return "books";
+        return "books/list";
     }
 }
